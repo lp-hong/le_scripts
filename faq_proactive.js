@@ -5,6 +5,7 @@ lpTag.events.bind({
     if( data.engagementName.indexOf("FAQ Proactive") > -1 ) {
       engagementButton = document.getElementById('faqproactive');
       if ( engagementButton ) {
+        lpTag.events.unbind(eventInfo);
         engagementButton.click();
       }
     }

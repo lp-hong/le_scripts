@@ -4,7 +4,7 @@ lpTag.events.bind({
     eventName: "START",
     func:  function (data, eventInfo) {
         if( data.engagementId == 1770275130) {
-            $("[role='button']").css('display', 'none');
+            $(".LPMcontainer[role='button']").css('display', 'none');
         }
     },
     async: true,
@@ -18,7 +18,7 @@ lpTag.events.bind({
     eventName: "OFFER_CLOSED",
     func:  function (data, eventInfo) {
         if( data.engagementId == 1783539130) {
-            $("[role='button']").css('display', 'block');
+            $(".LPMcontainer[role='button']").css('display', 'block');
         }
     },
     async: true,

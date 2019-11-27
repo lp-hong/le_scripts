@@ -4,7 +4,7 @@ lpTag.events.bind({
     eventName: "START",
     func:  function (data, eventInfo) {
         if( data.engagementId == 1770275130) {
-            $("[role='button']").css('display', 'none !important');
+            $("[role='button']").css('display', 'none');
         }
     },
     async: true,

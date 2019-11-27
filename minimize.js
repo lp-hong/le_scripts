@@ -1,7 +1,7 @@
 //hide on start
 lpTag.events.bind({
     appName: "LP_OFFERS",
-    eventName: "START",
+    eventName: "OFFER_DISPLAY",
     func:  function (data, eventInfo) {
         if( data.engagementId == 1770275130) {
             $(".LPMcontainer[role='button']").css('display', 'none');

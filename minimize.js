@@ -3,9 +3,8 @@ lpTag.events.bind({
     appName: "LP_OFFERS",
     eventName: "OFFER_DISPLAY",
     func:  function (data, eventInfo) {
-        if( data.engagementId == 1770275130) {
-            $(".LPMcontainer[role='button']").css('display', 'none');
-        }
+      console.log(data);
+      console.log(eventInfo);
     },
     async: true,
     triggerOnce: true

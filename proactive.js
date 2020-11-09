@@ -1,12 +1,9 @@
 lpTag.events.bind({
     appName: "LP_OFFERS",
-    eventName: "OFFER_DISPLAY",
+    eventName: "OFFER_IMPRESSION",
     func:  function (data, eventInfo) {
-        if( data.engagementName.indexOf("FAQ Proactive") > -1 ) {
-            engagementButton = document.querySelector(".LPMcontainer");
-            if ( engagementButton ) {
-                engagementButton.click();
-            }
+        if( data.windowId == 2512095630 ) {
+          lpTag.taglets.rendererStub.click(data.engagementId);
         }
     },
     async: true,
